@@ -42,6 +42,7 @@
 		else {
 			// Create the element that will house the rendered diagram.
 			parentElem.insertAdjacentHTML('afterend', `<div id="${mermaid_name}"></div>`);
+			parentElem.setAttribute("style", "display: none");
 			existingDiagram = $(`#${mermaid_name}`)[0];
 
 			// Create an observer to track changes to the diagram code.
